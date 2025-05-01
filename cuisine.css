@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f1de; /* Warm Mediterranean-inspired background */
+    font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2c3e50; /* Deep blue-gray for text */
+}
+
+/* Mediterranean Color Palette Modifications */
+:root {
+    --primary-color: #e67e22; /* Warm orange */
+    --secondary-color: #2980b9; /* Mediterranean blue */
+    --accent-color: #27ae60; /* Fresh green */
+    --background-light: #f9e79f; /* Soft yellow */
+}
+
+/* Header Styling with Mediterranean Flair */
+header {
+    background-color: rgba(41, 128, 185, 0.9); /* Translucent Mediterranean blue */
+    padding: 0.8rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navigation Styling */
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-list li a:hover {
+    color: var(--background-light);
+    transform: scale(1.05);
+}
+
+/* Hero Section with Mediterranean Vibes */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('images/mediterranean-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content {
+    padding: 2rem;
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    color: var(--background-light);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Category Grid with Mediterranean Touch */
+.categories {
+    padding: 5rem 0;
+    background-color: #f0f3bd; /* Light Mediterranean yellow-green */
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 0 2rem;
+}
+
+.category-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    border: 2px solid rgba(41, 128, 185, 0.2);
+}
+
+.category-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.category-img-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.category-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.category-card:hover .category-img-container img {
+    transform: scale(1.1);
+}
+
+.category-overlay {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(231, 76, 60, 0.8); /* Vibrant red overlay */
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.category-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.category-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.category-btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Newsletter Section */
+.newsletter {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('images/olive-grove.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+/* Footer with Mediterranean Colors */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 4rem 0 2rem 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: var(--background-light);
+    margin-bottom: 1.5rem;
+}
+
+.footer-section a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+}
