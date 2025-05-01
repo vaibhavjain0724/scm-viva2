@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Recipe Finder</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-900: #111827;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            background-color: var(--gray-50);
+            color: var(--gray-900);
+        }
+
+        .header {
+            background-color: var(--gray-900);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-list a:hover {
+            color: var(--primary);
+        }
+
+        .hero {
+            height: 40vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/heo-image.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .about-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--gray-900);
+        }
+
+        .mission-vision {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .mission-item {
+            padding: 2rem;
+            background: var(--gray-50);
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .mission-item h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        .team-name {
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-role {
+            color: var(--gray-600);
+            font-size: 0.875rem;
+        }
+
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-list {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="nav-logo">Recipe Finder</a>
+            <ul class="nav-list">
+                <li><a href="index.html">Recipes</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About Us</h1>
+            <p>Discover the story behind Recipe Finder and our passion for bringing delicious recipes to your kitchen.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-grid">
+            <div class="about-card">
+                <h2 class="card-title">Our Story</h2>
+                <p>Recipe Finder is the project we have chosen for our Front End Engineering Project with a simple mission: to make cooking accessible and enjoyable for everyone.We want to grow this website as a vibrant community of food lovers having their culinary experiences.</p>
+                <br>
+                <p>Today, we're proud to host thousands of recipes from home cooks and professional chefs alike, creating a diverse collection of dishes that celebrate both traditional cooking and modern innovation.</p>
+                
+                <div class="mission-vision">
+                    <div class="mission-item">
+                        <h3>Our Mission</h3>
+                        <p>To inspire and empower people to create delicious, homemade meals by providing accessible recipes, cooking tips, and a supportive community.</p>
+                    </div>
+                    <div class="mission-item">
+                        <h3>Our Vision</h3>
+                        <p>To become the world's most trusted and inclusive platform for recipe sharing and culinary learning, bringing people together through the joy of cooking.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <h2 class="card-title">Meet Our Team</h2>
+                <p>This website is a result of application of the knowledge of the Subject Front End Engineering . Our team, <b>Team 11</b>, has 3 members who are </p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="berries.jpg" alt="Vansh Pannu" class="team-image">
+                        <h3 class="team-name">Vansh Pannu</h3>
+                        <p class="team-role">Founder & Head Chef</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="cheese.jpg" alt="Vaibhav Jain" class="team-image">
+                        <h3 class="team-name">Vaibhav Jain</h3>
+                        <p class="team-role"></p>
+                    </div>
+                    <div class="team-member">
+                        <img src="cat.jpg" alt="Vinay Poonia" class="team-image">
+                        <h3 class="team-name">Vinay Poonia</h3>
+                        <p class="team-role"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
